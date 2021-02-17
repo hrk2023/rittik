@@ -1,0 +1,209 @@
+html,body{
+      background: #121212;
+      scroll-behavior: smooth;
+}
+body{
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      background: url(../assets/hero.jpg) no-repeat 50% 50%;
+      background-size: cover;
+}
+body::-webkit-scrollbar{
+      display: none;
+}
+.navbar-wrapper{
+      width: 95%;
+      height: 80px;
+      margin: auto;
+}
+.navbar-right-wrapper{
+      width: 100%;
+      height: 80px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+}
+.contact{
+      color: #f8f8f8;
+      font-size: 15px;
+      letter-spacing: 2px;
+      font-family: Poppins;
+      margin-right: 5px;
+      z-index: 1;
+}
+.menu{
+      position: relative;
+      top: 2px;
+      color: #6adb9d;
+      z-index: 1;
+}
+.menu ion-icon {
+      font-size: 24px;
+}
+.intro-wrapper{
+      width: 100%;
+      margin: 5rem 0 10rem 0;
+      display: flex;
+      justify-content: space-around;
+}
+.intro-right{
+      width: 50%;
+      display: flex;
+      justify-content: center;
+}
+.intro-left{
+      width: 50%;
+      display: flex;
+      justify-content: center;
+}
+.header{
+      width: 80%;
+      margin: auto;
+      font-size: 50px;
+      font-weight: 600;
+      font-family: Montserrat;
+      margin-bottom: 20px;
+      color: white;
+}
+.description{
+      width: 80%;
+      margin: auto;
+      font-size: 18px;
+      font-weight: 400;
+      font-family: Montserrat;
+      margin-bottom: 20px;
+      color: #7c7c7c;
+}
+.description img{
+      margin-left: 4px;
+}
+.left-sidebar-wrapper{
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 6%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+}
+.sidebar{
+      width: 60%;
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      list-style-type: none;
+}
+.sidebar-links ion-icon, i{
+      font-size: 28px;
+      color: #35cf35bf;
+}
+.profile-wrapper{
+      width: 95%;
+      margin: 10rem auto;
+      display: flex;
+      flex-direction: column;
+}
+.profile-sec-1{
+      display: flex;
+      justify-content: space-around;
+      text-align: left;
+      width: 60%;
+}
+.profile-sec-2{
+      display: flex;
+      justify-content: space-around;
+}
+.profile-left{
+      width: 50%;
+      padding-left: 10%;
+}
+.profile-right{
+      width: 50%;
+      display: flex;
+      justify-content: center;
+}
+.avatar{
+      width: 50%;
+      object-fit: contain;
+}
+.avatar2{
+      width: 50%;
+      object-fit: contain;
+      justify-self: center;
+}
+.ext{
+      color: #35cf35bf;
+}
+.project-wrapper{
+      width: 80%;
+      margin:auto;
+      padding-bottom: 100px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+}
+.project-card{
+      width: 70%;
+      margin: 20px 20px;
+      display: flex;
+      flex-direction: column;
+}
+.card-wrapper{
+      width: 100%;
+      display: flex;
+      margin: 10px 0px;
+}
+.project-image{
+      width: 100%;
+      border-radius: 10px;
+      border: 1.5px solid #35cf35bf;
+}
+.pj-img{
+      width: 100%;
+      object-fit: contain;
+      border-radius: 10px;
+}
+.project-body{
+      width: 100%;
+      margin-top: 20px;
+      padding: 0px 15px;
+      text-align: center;
+}
+.section-heading{
+      width: 100%;
+      text-align: center;
+      font-size: 80px;
+      font-weight: 900;
+      letter-spacing: 5px;
+      word-spacing: 3px;
+      text-transform: uppercase;
+      color: #9c9c9c;
+}
+.section-heading-2{
+      font-size: 80px;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: #9c9c9c;
+}
+.project-title{
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 10px;
+      word-spacing: 5px;
+      text-transform: uppercase;
+      color: #9c9c9c;
+}
+.project-description{
+      font-size: 15px;
+      font-weight: 400;
+      letter-spacing: 1.2px;
+      word-spacing: 2px;
+      color: #838383;
+}
+.zig{
+      justify-content: flex-end;
+}
