@@ -61,6 +61,9 @@ body{
       display: flex;
       justify-content: center;
 }
+.intro-right-links-wrapper{
+      display: none;
+}
 .header{
       width: 80%;
       margin: auto;
@@ -78,6 +81,11 @@ body{
       font-family: Montserrat;
       margin-bottom: 20px;
       color: #7c7c7c;
+}
+.desc-footer{
+      font-size: 18px;
+      color: #35cf35bf;
+      display: flex;
 }
 .description img{
       margin-left: 4px;
@@ -121,7 +129,7 @@ body{
       display: flex;
       justify-content: space-around;
 }
-.profile-left{
+/* .profile-left{
       width: 50%;
       padding-left: 10%;
 }
@@ -129,12 +137,8 @@ body{
       width: 50%;
       display: flex;
       justify-content: center;
-}
+} */
 .avatar{
-      width: 50%;
-      object-fit: contain;
-}
-.avatar2{
       width: 50%;
       object-fit: contain;
       justify-self: center;
@@ -210,4 +214,100 @@ body{
 }
 .zig{
       justify-content: flex-end;
+}
+@media screen and (max-width: 440px){
+      body, .scroll-container{
+            width: 100%;
+      }
+      .intro-wrapper{
+            flex-direction: column-reverse;
+            margin-bottom: 2rem;
+      }
+      .intro-right{
+            width: 100%;
+            text-align: center;
+            flex-direction: column;
+            align-items: center;
+      }
+      .intro-left{
+            width: 100%;
+            text-align: center;
+      }
+      .intro-right-links-wrapper{
+            display: flex;
+            width: 100%;
+            margin-top: 2rem;
+      }
+      .intro-right-sidebar{
+            width: 60%;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            list-style-type: none;
+      }
+      .intro-right-sidebar-links ion-icon, i{
+            font-size: 24px;
+            color: #35cf35bf;
+      }
+      .left-sidebar-wrapper{
+            display: none;
+      }
+      .header{
+            width: 95%;
+            margin-top: 20px;
+            font-size: 30px;
+            text-align: center;
+      }
+      .description{
+            width: 100%;
+            margin: auto;
+            padding: 0px 10px 0px 10px;
+            text-align: center;
+      }
+      .desc-footer{
+            display: flex;
+            justify-content: center;
+      }
+      .profile-wrapper{
+            width: 95%;
+            margin: 1rem auto;
+      }
+      .profile-sec-1{
+            width: 95%;
+            margin: 2rem auto;
+      }
+      .profile-sec-2{
+            width: 95%;
+            margin: auto;
+      }
+      .section-heading{
+            width: 100%;
+            font-size: 35px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            margin-bottom: 2rem; 
+      }
+      .section-heading-2{
+            font-size: 40px;
+            font-weight: 800;
+      }
+      .project-wrapper{
+            width: 100%;
+            margin: 4rem 0px;
+            padding-bottom: 0;
+      }
+      .project-card{
+            width: 90%;
+            margin: 20px auto;
+      }
+      .project-body{
+            width: 100%;
+            margin-top: 20px;
+            padding: 0px;
+      }
+      .project-title{
+            font-weight: 700;
+            letter-spacing: 5px;
+      }
 }
