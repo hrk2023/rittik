@@ -19,14 +19,19 @@
       <!-- Typed js -->
       <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
       <!-- Locomotive Scroll -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js" integrity="sha512-QcYm1q7RbnXmwY7HJ0H7938IS0MalTPYqGUF0fIwQgEjMBt2tqjDBt+R5I+ppdwEohjMdHnFU0H+RxmrGQ8qcg==" crossorigin="anonymous"></script>
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> 
       <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
 </head>
-<body data-scroll-container>
+<body>
+    <div class="scroll-container">
       <div class="navbar-wrapper" data-scroll-section>
             <div class="navbar-right-wrapper">
-                  <div class="contact">GET IN TOUCH</div>
-                  <div class="menu"><ion-icon name="options"></ion-icon></div>
+                  <a onclick="ScrollToTarget()" class="hyperscroll">
+                    <div class="contact">GET IN TOUCH</div>
+                    <div class="menu"><ion-icon name="options"></ion-icon></div>
+                  </a>
             </div>
       </div>
       <div class="intro-wrapper" data-scroll-section>
@@ -100,45 +105,47 @@
                             <h2 class="text-sm tracking-widest text-green-400 title-font mb-1 font-medium">Programming Languages I have worked with & Learning</h2>
                             <h1 class="text-5xl text-white pb-4 mb-4 border-b border-gray-800 leading-none"></h1>
                             <p class="flex items-center text-gray-400 mb-2">
-                              <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                              <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-green-700 text-gray-500 rounded-full flex-shrink-0">
+                                <svg fill="none" stroke="#121212" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                   <path d="M20 6L9 17l-5-5"></path>
                                 </svg>
                               </span>C Programming
                             </p>
                             <p class="flex items-center text-gray-400 mb-2">
-                              <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                              <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-green-700 text-gray-500 rounded-full flex-shrink-0">
+                                <svg fill="none" stroke="#121212" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                   <path d="M20 6L9 17l-5-5"></path>
                                 </svg>
                               </span>C++ 
                             </p>
                             <p class="flex items-center text-gray-400 mb-6">
-                              <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                              <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-green-700 text-gray-500 rounded-full flex-shrink-0">
+                                <svg fill="none" stroke="#121212" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                   <path d="M20 6L9 17l-5-5"></path>
                                 </svg>
                               </span>Java
                             </p>
                             <p class="flex items-center text-gray-400 mb-6">
-                              <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                              <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-green-700 text-gray-500 rounded-full flex-shrink-0">
+                                <svg fill="none" stroke="#121212" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                   <path d="M20 6L9 17l-5-5"></path>
                                 </svg>
                               </span>Python
                             </p>
                             <p class="flex items-center text-gray-400 mb-6">
-                              <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                              <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-green-700 text-gray-500 rounded-full flex-shrink-0">
+                                <svg fill="none" stroke="#121212" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                   <path d="M20 6L9 17l-5-5"></path>
                                 </svg>
                               </span>Javascript
                             </p>
-                            <button class="flex items-center mt-auto text-white bg-gray-800 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-700 rounded">Button
-                              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
-                                <path d="M5 12h14M12 5l7 7-7 7"></path>
-                              </svg>
-                            </button>
+                            <p class="flex items-center text-gray-400 mb-6">
+                              <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-green-700 text-gray-500 rounded-full flex-shrink-0">
+                                <svg fill="none" stroke="#121212" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                  <path d="M20 6L9 17l-5-5"></path>
+                                </svg>
+                              </span>Arduino
+                            </p>
                             <p class="text-xs text-gray-400 mt-3">Literally you probably haven't heard of them jean shorts.</p>
                           </div>
                         </div>
@@ -147,52 +154,47 @@
                                 <h2 class="text-sm tracking-widest text-green-400 title-font mb-1 font-medium">Frameworks and Databases I have worked with</h2>
                                 <h1 class="text-5xl text-white pb-4 mb-4 border-b border-gray-800 leading-none"></h1>
                                 <p class="flex items-center text-gray-400 mb-2">
-                                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-green-700 text-gray-500 rounded-full flex-shrink-0">
+                                    <svg fill="none" stroke="#121212" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                       <path d="M20 6L9 17l-5-5"></path>
                                     </svg>
                                   </span>Flask
                                 </p>
                                 <p class="flex items-center text-gray-400 mb-2">
-                                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-green-700 text-gray-500 rounded-full flex-shrink-0">
+                                    <svg fill="none" stroke="#121212" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                       <path d="M20 6L9 17l-5-5"></path>
                                     </svg>
                                   </span>Django
                                 </p>
                                 <p class="flex items-center text-gray-400 mb-6">
-                                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-green-700 text-gray-500 rounded-full flex-shrink-0">
+                                    <svg fill="none" stroke="#121212" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                       <path d="M20 6L9 17l-5-5"></path>
                                     </svg>
                                   </span>React
                                 </p>
                                 <p class="flex items-center text-gray-400 mb-6">
-                                    <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
-                                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                                        <path d="M20 6L9 17l-5-5"></path>
-                                      </svg>
+                                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-green-700 text-gray-500 rounded-full flex-shrink-0">
+                                    <svg fill="none" stroke="#121212" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                      <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
                                     </span>React Native
                                 </p>
                                 <p class="flex items-center text-gray-400 mb-6">
-                                    <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
-                                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                                        <path d="M20 6L9 17l-5-5"></path>
-                                      </svg>
+                                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-green-700 text-gray-500 rounded-full flex-shrink-0">
+                                    <svg fill="none" stroke="#121212" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                      <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
                                     </span>MySQL
                                 </p>
                                 <p class="flex items-center text-gray-400 mb-6">
-                                    <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
-                                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                                        <path d="M20 6L9 17l-5-5"></path>
-                                      </svg>
+                                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-green-700 text-gray-500 rounded-full flex-shrink-0">
+                                    <svg fill="none" stroke="#121212" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                      <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
                                     </span>MongoDB
-                                </p>
-                                <button class="flex items-center mt-auto text-white bg-gray-800 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-700 rounded">Button
-                                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
-                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                                  </svg>
-                                </button>
+                                </p>                               
                                 <p class="text-xs text-gray-400 mt-3">Literally you probably haven't heard of them jean shorts.</p>
                               </div>
                         </div>
@@ -201,45 +203,40 @@
                                 <h2 class="text-sm tracking-widest text-green-400 title-font mb-1 font-medium">Technologies I am working upon</h2>
                                 <h1 class="text-5xl text-white pb-4 mb-4 border-b border-gray-800 leading-none"></h1>
                                 <p class="flex items-center text-gray-400 mb-2">
-                                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-green-700 text-gray-500 rounded-full flex-shrink-0">
+                                    <svg fill="none" stroke="#121212" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                       <path d="M20 6L9 17l-5-5"></path>
                                     </svg>
                                   </span>Data Structures & Algorithms
                                 </p>
                                 <p class="flex items-center text-gray-400 mb-2">
-                                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-green-700 text-gray-500 rounded-full flex-shrink-0">
+                                    <svg fill="none" stroke="#121212" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                       <path d="M20 6L9 17l-5-5"></path>
                                     </svg>
                                   </span>Operating System
                                 </p>
                                 <p class="flex items-center text-gray-400 mb-6">
-                                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-green-700 text-gray-500 rounded-full flex-shrink-0">
+                                    <svg fill="none" stroke="#121212" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                       <path d="M20 6L9 17l-5-5"></path>
                                     </svg>
                                   </span>Nginx
                                 </p>
                                 <p class="flex items-center text-gray-400 mb-6">
-                                    <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
-                                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                    <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-green-700 text-gray-500 rounded-full flex-shrink-0">
+                                      <svg fill="none" stroke="#121212" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                         <path d="M20 6L9 17l-5-5"></path>
                                       </svg>
                                     </span>NodeJS
                                   </p>
                                 <p class="flex items-center text-gray-400 mb-6">
-                                    <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
-                                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                                        <path d="M20 6L9 17l-5-5"></path>
-                                      </svg>
+                                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-green-700 text-gray-500 rounded-full flex-shrink-0">
+                                    <svg fill="none" stroke="#121212" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                      <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
                                     </span>CI/CD
-                                  </p>
-                                <button class="flex items-center mt-auto text-white bg-gray-800 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-700 rounded">Button
-                                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
-                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                                  </svg>
-                                </button>
+                                  </p>                               
                                 <p class="text-xs text-gray-400 mt-3">Literally you probably haven't heard of them jean shorts.</p>
                               </div>
                         </div>
@@ -247,11 +244,11 @@
             </div>
       </div>
       <div class="project-wrapper" data-scroll-section>
-            <h1 class="section-heading" data-scroll data-scroll-speed="4">MY PROJECTS</h1>
+            <h1 class="section-heading" data-scroll data-scroll-speed="6">MY PROJECTS</h1>
             <div class="card-wrapper">
-                  <div class="project-card" data-scroll data-scroll-speed="3">
+                  <div class="project-card" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3">
                         <div class="project-image">
-                              <img src="./static/assets/netflix clone.PNG" class="pj-img">
+                              <img data-scroll clone.PNG" src="./static/assets/netflix clone.PNG" class="pj-img">
                         </div>
                         <div class="project-body">
                               <div class="project-title">Netflix Clone</div>
@@ -266,9 +263,9 @@
                   </div>
             </div>
             <div class="card-wrapper zig">
-                  <div class="project-card zig" data-scroll data-scroll-speed="2">
+                  <div class="project-card zig" data-scroll data-scroll-direction="horizontal" data-scroll-speed="5">
                         <div class="project-image">
-                              <img src="./static/assets/ecesite.PNG" class="pj-img">
+                              <img data-scroll src="./static/assets/ecesite.PNG" class="pj-img">
                         </div>
                         <div class="project-body">
                               <div class="project-title">ECE Site</div>
@@ -277,9 +274,9 @@
                   </div>
             </div>
             <div class="card-wrapper">
-                  <div class="project-card" data-scroll data-scroll-speed="3">
+                  <div class="project-card" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3">
                         <div class="project-image">
-                              <img src="./static/assets/ardmedia.PNG" class="pj-img">
+                              <img data-scroll src="./static/assets/ardmedia.PNG" class="pj-img">
                         </div>
                         <div class="project-body">
                               <div class="project-title">Aryan Dutta Media Website</div>
@@ -288,32 +285,104 @@
                   </div>
             </div>
             <div class="card-wrapper zig">
-                  <div class="project-card zig" data-scroll data-scroll-speed="2">
+                  <div class="project-card zig" data-scroll data-scroll-direction="horizontal" data-scroll-speed="5">
                         <div class="project-image">
-                              <img src="./static/assets/cssym.PNG" class="pj-img">
+                              <img data-scroll src="./static/assets/cssym.PNG" class="pj-img">
                         </div>
                         <div class="project-body">
                               <div class="project-title">CS Symposium Website</div>
-                              <div class="project-description">Official Site of CS Symposium, which is a Communities of Notable Alumnis & current students of Tezpur University</div>
+                              <div class="project-description">Official Site of CS Symposium, which is a Community of Notable Alumnis & current students of Tezpur University</div>
                         </div>
                   </div>
             </div>
       </div>
-      <script>
-            var typed = new Typed('.typed', {
-                  strings: ["I'm Rittik"],
-                  typeSpeed: 70,
-                  backSpeed: 70,
-                  loop: true
-            });
-      </script>
-      <script>
-            const scroller = new LocomotiveScroll({
-                  el: document.querySelector('[data-scroll-container]'),
-                  smooth: true
-            });
-            ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
-      </script>
+      <div class="contact-wrapper pb-24" id="ccontact" data-scroll-section>
+        <div class="contact-header">
+          <p class="section-heading" data-scroll data-scroll-speed="2">CONTACT ME</p>
+        </div>
+        <section class="text-gray-400 bg-transparent body-font relative" data-scroll>
+          <div class="container px-5 py-12 mx-auto">
+            <div class="lg:w-1/2 md:w-2/3 mx-auto">
+              <form data-scroll class="flex flex-wrap -m-2" id="cform" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc2blsvvq1kBvCvPzGLBt4142xVDtwGthVV9Wysey-VAtx_Mg/formResponse" method="post">
+                <div class="p-2 w-1/2">
+                  <div class="relative">
+                    <input type="text" id="name" name="entry.2098884524" placeholder="Name"
+                    class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-green-500 focus:bg-gray-900 focus:ring-2 focus:ring-green-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                  </div>
+                </div>
+                <div class="p-2 w-1/2">
+                  <div class="relative">
+                    <input type="email" id="email" name="entry.779238766" placeholder="Email"
+                    class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-green-500 focus:bg-gray-900 focus:ring-2 focus:ring-green-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                  </div>
+                </div>
+                <div class="p-2 w-full">
+                  <div class="relative">
+                    <textarea id="message" name="entry.1349167159" placeholder="Message"
+                    class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-green-500 focus:bg-gray-900 focus:ring-2 focus:ring-green-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                  </div>
+                </div>
+                <div class="p-2 w-full">
+                  <button class="flex mx-auto text-white bg-green-700 border-0 py-2 px-8 focus:outline-none hover:bg-green-600 rounded text-lg">SEND</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+        
+      </div>
+    </div>
+    <script>
+          var typed = new Typed('.typed', {
+                strings: ["I'm Rittik"],
+                typeSpeed: 70,
+                backSpeed: 70,
+                loop: true
+          });
+    </script>
+    <script>
+          const scroller = new LocomotiveScroll({
+                el: document.querySelector('.scroll-container'),
+                smooth: true,
+                multiplier: 1
+          });
+          const target = document.querySelector('#ccontact');
+          function ScrollToTarget(){
+            scroller.scrollTo(target);
+          }
+          setInterval(() => {
+            scroller.update();
+          },1000);
+    </script>
+    <script>
+      const url = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSc2blsvvq1kBvCvPzGLBt4142xVDtwGthVV9Wysey-VAtx_Mg/formResponse";
+      let form = document.querySelector("#cform");
+      form.addEventListener("submit", (e)=>{
+        e.preventDefault();//prevent default behaviour
+        fetch(url,{
+            method: "POST",
+            mode: "no-cors",
+            header:{
+                'Content-Type': 'application/json'
+                },
+            body: getInputData()
+        })
+        .then(data=>{
+            alert("Message Sent");
+        })
+        .catch(err=>console.error(err)); //promise based
+      });
+      function getInputData(){
+        let dataToPost = new FormData(); //formdata API
+
+        //fill name attributes to corresponding values
+        dataToPost.append("entry.2098884524", document.querySelector("#name").value);
+        dataToPost.append("entry.779238766", document.querySelector("#email").value);
+        dataToPost.append("entry.1349167159", document.querySelector("#message").value);
+
+        return dataToPost;
+      }
+    </script>
 
 </body>
 </html>

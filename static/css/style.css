@@ -6,11 +6,8 @@ body{
       width: 100%;
       margin: 0;
       padding: 0;
-      background: url(../assets/hero.jpg) no-repeat 50% 50%;
-      background-size: cover;
-}
-body::-webkit-scrollbar{
-      display: none;
+      background: url(../assets/hero.jpg) no-repeat;
+      background-size: contain;
 }
 .navbar-wrapper{
       width: 95%;
@@ -23,6 +20,13 @@ body::-webkit-scrollbar{
       display: flex;
       justify-content: flex-end;
       align-items: center;
+}
+.hyperscroll{
+      height: 80px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      cursor: pointer;
 }
 .contact{
       color: #f8f8f8;
@@ -155,7 +159,7 @@ body::-webkit-scrollbar{
 .card-wrapper{
       width: 100%;
       display: flex;
-      margin: 10px 0px;
+      margin: 0px;
 }
 .project-image{
       width: 100%;
