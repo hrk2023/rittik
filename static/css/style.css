@@ -215,6 +215,21 @@ body{
 .zig{
       justify-content: flex-end;
 }
+@media screen and (max-width: 1024px){
+      .profile-wrapper{
+            width: 85%;
+            margin: 1rem auto;
+      }
+}
+@media screen and (max-width: 768px){
+      .profile-wrapper{
+            width: 80%;
+            margin: 1rem auto;
+      }
+      .last-skbox{
+            margin: auto;
+      }
+}
 @media screen and (max-width: 440px){
       body, .scroll-container{
             width: 100%;
@@ -310,4 +325,5 @@ body{
             font-weight: 700;
             letter-spacing: 5px;
       }
+
 }
