@@ -13,11 +13,10 @@
       <!-- google fonts -->
       <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
       <!-- icons -->
-      <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
       <!-- Font Awesome -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-      <!-- Typed js -->
-      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
       <!-- Locomotive Scroll -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ==" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js" integrity="sha512-QcYm1q7RbnXmwY7HJ0H7938IS0MalTPYqGUF0fIwQgEjMBt2tqjDBt+R5I+ppdwEohjMdHnFU0H+RxmrGQ8qcg==" crossorigin="anonymous"></script>
@@ -26,29 +25,50 @@
 </head>
 <body>
     <div class="scroll-container">
+
+      <!-- Navbar Section -->
       <div class="navbar-wrapper" data-scroll-section>
             <div class="navbar-right-wrapper">
                   <a onclick="ScrollToTarget()" class="hyperscroll">
                     <div class="contact">GET IN TOUCH</div>
-                    <div class="menu"><ion-icon name="options"></ion-icon></div>
+                    <div class="menu"><ion-icon name="navigate-outline"></ion-icon></div>
                   </a>
             </div>
       </div>
+      <!-- End Navbar Section -->
+
+      <!-- Intro Section -->
       <div class="intro-wrapper" data-scroll-section>
             <div class="intro-left">
                   <div class="intro-inner-wrapper">
-                        <div class="header" data-scroll  data-scroll-speed="3">
-                              Hi,
-                              <span class="typed"></span>
+                        <div class="header" data-scroll data-scroll-speed="2">
+                              Rittik Dasgupta
                         </div>
+                        <h1 class="sub-header" data-scroll data-scroll-speed="2.5">
+                          Personal Website
+                        </h1>
+                        <h1 class="aboutme" data-scroll data-scroll-speed="2.5">About Me</h1>
                         <div class="description" data-scroll data-scroll-speed="2">
-                              <span class="ext">Electronics & Communication</span> UnderGrad from
-                              <span class="ext">Tezpur University</span>.
-                              A keen problem-solver and have a logical approach 
-                              to any of them. A Linux enthusiast and
-                              highly motivated in the field of software 
-                              development, trying to make people’s life easier with
-                              my <span class="ext">superpowers</span>.
+                              My name is Rittik Dasgupta and I'm a software engineer. 
+                              I'm from India, living in Digboi and currently working at <b>Atlan</b>. 
+                              You can find me on  
+                              <a href="https://github.com/hrk2023/" target="_blank" class="socials">
+                                <ion-icon name="logo-github"></ion-icon>
+                              </a>,
+                              <a href="https://www.linkedin.com/in/hrk2023/" target="_blank" class="socials">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                              </a>or on
+                              <a href="https://www.instagram.com/_cipherman/" target="_blank" class="socials">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                              </a><br><br>
+                              On this page you can find some information about me and a few articles I wrote.
+                              Most of them are about topics that I'm most interested in, such as Python, Vim.
+                              I also have some projects which are listed down below.
+
+                              I post my articles on 
+                              <a href="https://dev.to/hrk2023" target="_blank" class="socials">
+                                <i class="fab fa-dev"></i>
+                              </a>, so you can find them there.
                               <br><br>
 
                               <div class="desc-footer">A Fan of Batman and 
@@ -58,359 +78,199 @@
                         </div>
                   </div>
             </div>
-            <div class="intro-right" data-scroll data-scroll-speed="6">
-                  <img src="https://i.ibb.co/N7mPS1p/me-fi-min.png"
-                  class="avatar">
+            <div class="intro-right" data-scroll data-scroll-speed="4">
+                  <div class="avatar-wrapper">
+                    <img src="https://i.ibb.co/N7mPS1p/me-fi-min.png"
+                    class="avatar">
+                  </div>
+            </div>
+      </div>
+      <!-- End Intro Section -->
 
-                  <!-- Visible Only in Mobile -->
-                  <div class="intro-right-links-wrapper">
-                    <ul class="intro-right-sidebar">
-                          <li class="intro-right-sidebar-links">
-                                <a href="https://www.linkedin.com/in/rittik-dasgupta-a6820117a/" target="_blank">
-                                      <ion-icon name="logo-linkedin"></ion-icon>
-                                </a>
-                          </li>
-                          <li class="intro-right-sidebar-links">
-                                <a href="https://github.com/hrk2023/" target="_blank">
-                                      <ion-icon name="logo-github"></ion-icon>
-                                </a>
-                          </li>
-                          <li class="intro-right-sidebar-links">
-                                <a href="https://dev.to/hrk2023" target="_blank">
-                                      <i class="fab fa-dev"></i>
-                                </a>
-                          </li>
-                          <li class="intro-right-sidebar-links">
-                                <a href="https://www.instagram.com/_cipherman/" target="_blank">
-                                      <ion-icon name="logo-instagram"></ion-icon>
-                                </a>
-                          </li>
-                    </ul>
-                  </div>
-            </div>
-      </div>
-      <div class="left-sidebar-wrapper">
-            <ul class="sidebar">
-                  <li class="sidebar-links">
-                        <a href="https://www.linkedin.com/in/rittik-dasgupta-a6820117a/" target="_blank">
-                              <ion-icon name="logo-linkedin"></ion-icon>
-                        </a>
-                  </li>
-                  <li class="sidebar-links">
-                        <a href="https://github.com/hrk2023/" target="_blank">
-                              <ion-icon name="logo-github"></ion-icon>
-                        </a>
-                  </li>
-                  <li class="sidebar-links">
-                        <a href="https://dev.to/hrk2023" target="_blank">
-                              <i class="fab fa-dev"></i>
-                        </a>
-                  </li>
-                  <li class="sidebar-links">
-                        <a href="https://www.instagram.com/_cipherman/" target="_blank">
-                              <ion-icon name="logo-instagram"></ion-icon>
-                        </a>
-                  </li>
+      <!-- Creative Columns Section -->
+      <div class="creative-column" data-scroll-section>
+        <div class="column-a creative-cards" data-scroll data-scroll-speed="4">
+          <div class="column-header">
+            <ion-icon name="footsteps-outline" class="column-header-icons"></ion-icon>
+            Life Events ...
+          </div>
+          <div class="column-list-wrapper">
+            <ul class="column-list">
+              <li>Created in 2000</li>
+              <li>Studying ECE in 2019</li>
+              <li>Started working at Atlan in 2022</li>
+              <li>Bachelors in 2023</li>
             </ul>
-      </div>
-      <div class="profile-wrapper" data-scroll-section>
-            <div class="profile-sec-1">
-                  <span class="section-heading-2" data-scroll data-scroll-speed="4">M</span>
-                  <span class="section-heading-2" data-scroll data-scroll-speed="2">Y</span>
-                  <span class="section-heading-2" style="margin-left: 5px;" data-scroll data-scroll-speed="3"> S</span>
-                  <span class="section-heading-2" data-scroll data-scroll-speed="2">K</span>
-                  <span class="section-heading-2" data-scroll data-scroll-speed="1">I</span>
-                  <span class="section-heading-2" data-scroll data-scroll-speed="4">L</span>
-                  <span class="section-heading-2" data-scroll data-scroll-speed="3">L</span>
-                  <span class="section-heading-2" data-scroll data-scroll-speed="2">S</span>
-            </div>
-            <div class="profile-sec-2">
-                  <div class="flex flex-wrap -m-4">
-                    <div class="p-4 lg:w-1/4 md:w-1/2 w-full" data-scroll data-scroll-speed="4">
-                      <div class="h-full p-6 rounded-lg border-2 border-green-700 flex flex-col relative overflow-hidden">
-                        <h2 class="text-sm tracking-widest text-green-400 title-font mb-1 font-medium">Programming Languages I have worked with & Learning</h2>
-                        <h1 class="text-5xl text-white pb-4 mb-4 border-b border-gray-800 leading-none"></h1>
-                        <p class="flex items-center text-gray-400 mb-2">
-                          <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-green-700 text-gray-500 rounded-full flex-shrink-0">
-                            <svg fill="none" stroke="#121212" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                              <path d="M20 6L9 17l-5-5"></path>
-                            </svg>
-                          </span>C Programming
-                        </p>
-                        <p class="flex items-center text-gray-400 mb-2">
-                          <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-green-700 text-gray-500 rounded-full flex-shrink-0">
-                            <svg fill="none" stroke="#121212" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                              <path d="M20 6L9 17l-5-5"></path>
-                            </svg>
-                          </span>C++ 
-                        </p>
-                        <p class="flex items-center text-gray-400 mb-6">
-                          <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-green-700 text-gray-500 rounded-full flex-shrink-0">
-                            <svg fill="none" stroke="#121212" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                              <path d="M20 6L9 17l-5-5"></path>
-                            </svg>
-                          </span>Java
-                        </p>
-                        <p class="flex items-center text-gray-400 mb-6">
-                          <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-green-700 text-gray-500 rounded-full flex-shrink-0">
-                            <svg fill="none" stroke="#121212" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                              <path d="M20 6L9 17l-5-5"></path>
-                            </svg>
-                          </span>Python
-                        </p>
-                        <p class="flex items-center text-gray-400 mb-6">
-                          <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-green-700 text-gray-500 rounded-full flex-shrink-0">
-                            <svg fill="none" stroke="#121212" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                              <path d="M20 6L9 17l-5-5"></path>
-                            </svg>
-                          </span>Javascript
-                        </p>
-                        <p class="flex items-center text-gray-400 mb-6">
-                          <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-green-700 text-gray-500 rounded-full flex-shrink-0">
-                            <svg fill="none" stroke="#121212" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                              <path d="M20 6L9 17l-5-5"></path>
-                            </svg>
-                          </span>Arduino
-                        </p>               
-                      </div>
-                    </div>
-                    <div class="p-4 lg:w-1/4 md:w-1/2 w-full" data-scroll data-scroll-speed="2">
-                          <div class="h-full p-6 rounded-lg border-2 border-green-700 flex flex-col relative overflow-hidden">
-                            <h2 class="text-sm tracking-widest text-green-400 title-font mb-1 font-medium">Frameworks and Databases I have worked with</h2>
-                            <h1 class="text-5xl text-white pb-4 mb-4 border-b border-gray-800 leading-none"></h1>
-                            <p class="flex items-center text-gray-400 mb-2">
-                              <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-green-700 text-gray-500 rounded-full flex-shrink-0">
-                                <svg fill="none" stroke="#121212" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                                  <path d="M20 6L9 17l-5-5"></path>
-                                </svg>
-                              </span>Flask
-                            </p>
-                            <p class="flex items-center text-gray-400 mb-2">
-                              <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-green-700 text-gray-500 rounded-full flex-shrink-0">
-                                <svg fill="none" stroke="#121212" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                                  <path d="M20 6L9 17l-5-5"></path>
-                                </svg>
-                              </span>Django
-                            </p>
-                            <p class="flex items-center text-gray-400 mb-6">
-                              <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-green-700 text-gray-500 rounded-full flex-shrink-0">
-                                <svg fill="none" stroke="#121212" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                                  <path d="M20 6L9 17l-5-5"></path>
-                                </svg>
-                              </span>React
-                            </p>
-                            <p class="flex items-center text-gray-400 mb-6">
-                              <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-green-700 text-gray-500 rounded-full flex-shrink-0">
-                                <svg fill="none" stroke="#121212" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                                  <path d="M20 6L9 17l-5-5"></path>
-                                </svg>
-                                </span>React Native
-                            </p>
-                            <p class="flex items-center text-gray-400 mb-6">
-                              <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-green-700 text-gray-500 rounded-full flex-shrink-0">
-                                <svg fill="none" stroke="#121212" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                                  <path d="M20 6L9 17l-5-5"></path>
-                                </svg>
-                                </span>MySQL
-                            </p>
-                            <p class="flex items-center text-gray-400 mb-6">
-                              <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-green-700 text-gray-500 rounded-full flex-shrink-0">
-                                <svg fill="none" stroke="#121212" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                                  <path d="M20 6L9 17l-5-5"></path>
-                                </svg>
-                                </span>MongoDB
-                            </p>                                                          
-                          </div>
-                    </div>
-                    <div class="p-4 lg:w-1/4 md:w-1/2 w-full last-skbox" data-scroll data-scroll-speed="5">
-                          <div class="h-full p-6 rounded-lg border-2 border-green-700 flex flex-col relative overflow-hidden">
-                            <h2 class="text-sm tracking-widest text-green-400 title-font mb-1 font-medium">Technologies I am working upon</h2>
-                            <h1 class="text-5xl text-white pb-4 mb-4 border-b border-gray-800 leading-none"></h1>
-                            <p class="flex items-center text-gray-400 mb-2">
-                              <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-green-700 text-gray-500 rounded-full flex-shrink-0">
-                                <svg fill="none" stroke="#121212" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                                  <path d="M20 6L9 17l-5-5"></path>
-                                </svg>
-                              </span>Data Structures & Algorithms
-                            </p>
-                            <p class="flex items-center text-gray-400 mb-2">
-                              <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-green-700 text-gray-500 rounded-full flex-shrink-0">
-                                <svg fill="none" stroke="#121212" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                                  <path d="M20 6L9 17l-5-5"></path>
-                                </svg>
-                              </span>Operating System
-                            </p>
-                            <p class="flex items-center text-gray-400 mb-6">
-                              <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-green-700 text-gray-500 rounded-full flex-shrink-0">
-                                <svg fill="none" stroke="#121212" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                                  <path d="M20 6L9 17l-5-5"></path>
-                                </svg>
-                              </span>Nginx
-                            </p>
-                            <p class="flex items-center text-gray-400 mb-6">
-                                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-green-700 text-gray-500 rounded-full flex-shrink-0">
-                                  <svg fill="none" stroke="#121212" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                                    <path d="M20 6L9 17l-5-5"></path>
-                                  </svg>
-                                </span>NodeJS
-                              </p>
-                            <p class="flex items-center text-gray-400 mb-6">
-                              <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-green-700 text-gray-500 rounded-full flex-shrink-0">
-                                <svg fill="none" stroke="#121212" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                                  <path d="M20 6L9 17l-5-5"></path>
-                                </svg>
-                                </span>CI/CD
-                              </p>                                                           
-                          </div>
-                    </div>
-                  </div>
-            </div>
-      </div>
-      <div class="project-wrapper" data-scroll-section>
-            <h1 class="section-heading" data-scroll data-scroll-speed="6">MY PROJECTS</h1>
-            <div class="card-wrapper">
-                  <div class="project-card" data-scroll data-scroll-speed="1">
-                        <div class="project-image">
-                              <img data-scroll clone.PNG" src="./static/assets/netflix clone.PNG" class="pj-img">
-                        </div>
-                        <div class="project-body">
-                              <div class="project-title">Netflix Clone</div>
-                              <div class="project-description">
-                                    A Fully Funtional Netflix Clone
-                                    <a href="https://freenetflix-fdc5e.firebaseapp.com/"
-                                    target="_blank">
-                                    
-                                    </a>
-                              </div>
-                        </div>
-                  </div>
-            </div>
-            <div class="card-wrapper zig">
-                  <div class="project-card zig" data-scroll data-scroll-speed="2">
-                        <a href="https://ece23.herokuapp.com?api_key=637882ca-4413-4113-908f-e76dd8d10152" target="_blank">
-                          <div class="project-image">
-                            <img data-scroll src="./static/assets/ecesite.PNG" class="pj-img">
-                          </div>
-                        </a>
-                        <div class="project-body">
-                              <div class="project-title">ECE Site</div>
-                              <div class="project-description">An Educative Site to Store Live Lectures, Pre Recorded Videos, Lectures Notes Provided to ECE'23 Batch</div>
-                        </div>
-                  </div>
-            </div>
-            <div class="card-wrapper">
-              <div class="project-card" data-scroll  data-scroll-speed="3">
-                    <a href="http://www.tucssym.com" target="_blank">
-                      <div class="project-image">
-                        <img data-scroll src="./static/assets/cssym.PNG" class="pj-img">
-                      </div>
-                    </a>
-                    <div class="project-body">
-                          <div class="project-title">CS Symposium Website</div>
-                          <div class="project-description">Official Site of CS Symposium, which is a Community of Notable Alumnis & current students of Tezpur University</div>
-                    </div>
-              </div>
-            </div>
-            <div class="card-wrapper zig">
-                  <div class="project-card zig" data-scroll data-scroll-speed="5">
-                        <a href="https://www.aryanduttamedia.com" target="_blank">
-                          <div class="project-image">
-                            <img data-scroll src="./static/assets/ardmedia.PNG" class="pj-img">
-                          </div>
-                        </a>
-                        <div class="project-body">
-                              <div class="project-title">Aryan Dutta Media Website</div>
-                              <div class="project-description">Official Site of Aryan Dutta Media, which is a startup helping businesses go online</div>
-                        </div>
-                   </div>
-            </div>
-      </div>
-      <div class="contact-wrapper pb-24" id="ccontact" data-scroll-section>
-        <div class="contact-header">
-          <p class="section-heading" data-scroll data-scroll-speed="2">CONTACT ME</p>
+          </div>
         </div>
-        <section class="text-gray-400 bg-transparent body-font relative" data-scroll>
-          <div class="container px-5 py-12 mx-auto">
-            <div class="lg:w-1/2 md:w-2/3 mx-auto">
-              <form data-scroll class="flex flex-wrap -m-2" id="cform" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc2blsvvq1kBvCvPzGLBt4142xVDtwGthVV9Wysey-VAtx_Mg/formResponse" method="post">
-                <div class="p-2 w-full">
-                  <div class="relative">
-                    <input required type="text" id="name" name="entry.2098884524" placeholder="Name"
-                    class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-green-500 focus:bg-gray-900 focus:ring-2 focus:ring-green-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                  </div>
-                </div>
-                <div class="p-2 w-full">
-                  <div class="relative">
-                    <input required type="email" id="email" name="entry.779238766" placeholder="Email"
-                    class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-green-500 focus:bg-gray-900 focus:ring-2 focus:ring-green-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                  </div>
-                </div>
-                <div class="p-2 w-full">
-                  <div class="relative">
-                    <textarea id="message" name="entry.1349167159" placeholder="Message" required
-                    class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-green-500 focus:bg-gray-900 focus:ring-2 focus:ring-green-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
-                  </div>
-                </div>
-                <div class="p-2 w-full">
-                  <button class="flex mx-auto text-white bg-green-700 border-0 py-2 px-8 focus:outline-none hover:bg-green-600 rounded text-lg">SEND</button>
-                </div>
-              </form>
+        <div class="column-b creative-cards" data-scroll data-scroll-speed="4">
+          <div class="column-header">
+            <ion-icon name="flash-outline" class="column-header-icons"></ion-icon>
+            Passionate about ...
+          </div>
+          <div class="column-list-wrapper">
+            <ul class="column-list">
+              <li>Guitar</li>
+              <li>Coding</li>
+              <li>Cricket</li>
+              <li>Music</li>
+            </ul>
+          </div>
+        </div>
+        <div class="column-c creative-cards" data-scroll data-scroll-speed="4">
+          <div class="column-header">
+            <ion-icon name="construct-outline" class="column-header-icons"></ion-icon>
+            Working on ...
+          </div>
+          <div class="column-list-wrapper">
+            <ul class="column-list">
+              <li>Golang <i class="fa-brands fa-golang fa-lg"></i></li>
+              <li>Access Control</li>
+              <li>Event Driven Systems</li>
+              <li>Scalable Systems</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End Creation Column Section -->
+
+      <!-- Blogs Section -->
+      <div class="blog-wrapper" data-scroll-section>
+        <div class="blog-header" data-scroll data-scroll-speed="4">Blog Posts</div>
+        <div class="blog-description" data-scroll data-scroll-speed="4">
+          This is a list of my blog posts. Stay tuned to get awesome tech blogs on the tech world. 
+          Visit my blogging profile at <a href="https://dev.to/hrk2023" target="_blank"><u>DEV.to</u></a>
+        </div>
+        <ul class="blog-list" data-scroll data-scroll-speed="4">
+          <div class="blog-item">
+            <div class="blog-item-date">Sep 16, 2021</div>
+            <div class="blog-item-link">
+              <a href="https://dev.to/hrk2023/writing-a-flask-app-the-noob-way-cfk" target="_blank" class="blog-link">
+                Writing a Flask App the !Noob Way
+              </a>
             </div>
           </div>
-        </section>
-        
+          <div class="blog-item">
+            <div class="blog-item-date">Apr 15, 2021</div>
+            <div class="blog-item-link">
+              <a href="https://dev.to/hrk2023/markdown-preview-in-vim-44bl" target="_blank" class="blog-link">
+                Markdown Preview in Vim
+              </a>
+            </div>
+          </div>
+          <div class="blog-item">
+            <div class="blog-item-date">Nov 16, 2020</div>
+            <div class="blog-item-link">
+              <a href="https://dev.to/hrk2023/overview-of-vim-3544" target="_blank" class="blog-link">
+                Overview of Vim
+              </a>
+            </div>
+          </div>
+        </ul>
       </div>
+      <!-- End Blogs Section -->
+
+      <!-- Projects Section -->
+      <div class="project-wrapper" data-scroll-section>
+        <div class="project-header" data-scroll data-scroll-speed="4">Projects</div>
+        <div class="project-description" data-scroll data-scroll-speed="4">
+          These are some of my projects. You can find all of them on my 
+          <a href="https://github.com/hrk2023/" target="_blank" class="socials">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+        </div>
+        <ul class="project-list" data-scroll data-scroll-speed="4">
+          <div class="project-item">
+            <div class="project-item-image">
+              <img data-scroll alt="netflix-clone.png" src="./static/assets/netflix clone.PNG" class="pj-img">
+            </div>
+            <div class="project-item-about">
+              <div class="project-title">Netflix Clone</div>
+                <div class="project-descriptions">
+                    A Fully Funtional Netflix Clone with support for streaming movies and series.
+                    This is built using <b>ReactJS</b>, <b>Flask</b> and deployed on <b>Firebase</b> and <b>Heroku</b>.
+                    <a href="https://freenetflix-fdc5e.firebaseapp.com/"
+                    target="_blank"></a>
+                </div>
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-item-image">
+              <img data-scroll src="./static/assets/ecesite.PNG" class="pj-img">
+            </div>
+            <div class="project-item-about">
+              <div class="project-title">
+                <a href="https://ece23.herokuapp.com?api_key=637882ca-4413-4113-908f-e76dd8d10152" target="_blank">
+                  Online Study Material Management Site
+                </a>
+              </div>
+              <div class="project-descriptions">
+                An Educative Site to Store Live Lectures, Pre Recorded Videos, 
+                Lectures Notes Provided to ECE'23 Batch Tezpur University.
+                This is built using <b>Django</b>, <b>Django Templating Engine</b> and deployed on <b>Heroku</b>.
+              </div>
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-item-image">
+              <img data-scroll src="./static/assets/cssym.PNG" class="pj-img">
+            </div>
+            <div class="project-item-about">
+              <div class="project-title">
+                <a href="http://www.tucssym.com" target="_blank">
+                  CS Symposium Website
+                </a>
+              </div>
+              <div class="project-descriptions">
+                Official Site of CS Symposium, which is a Community of 
+                Notable Alumnis & current students of Tezpur University. 
+                <b>ReactJS</b> is used for frontend, <b>Flask</b> for the backend.
+                <b>Docker</b> is used for containerization and <b>Nginx</b>
+                for reverse proxy.
+              </div>
+            </div>
+          </div>
+        </ul>
+      </div>
+      <!-- End Project Section -->
+
+      <!-- Contacts Section -->
+      <div class="contact-wrapper" id="contact" data-scroll-section>
+        <div class="contact-header" data-scroll data-scroll-speed="4">Contact</div>
+        <div class="contact-description" data-scroll data-scroll-speed="4">
+          You can reach out to me at 
+          <a href="https://www.linkedin.com/in/hrk2023/" target="_blank" class="socials">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a> 
+          or mail me at 
+          <span id="email">
+            <a href="mailto:hrkdasgupta025@gmail.com" target="_blank">
+              hrkdasgupta025@gmail.com
+            </a>
+          </span>
+          <br><br>
+          <span id="copy">
+            Copyright &copy; 2023 Rittik Dasgupta
+          </span>
+        </div>
+      </div>
+      <!-- End Contacts Section -->
+
     </div>
-    <script>
-          var typed = new Typed('.typed', {
-                strings: ["I'm Rittik"],
-                typeSpeed: 70,
-                backSpeed: 70,
-                loop: true
-          });
-    </script>
+  
     <script>
           const scroller = new LocomotiveScroll({
                 el: document.querySelector('.scroll-container'),
                 smooth: true,
                 multiplier: 1
           });
-          const target = document.querySelector('#ccontact');
+          const target = document.querySelector('#contact');
           function ScrollToTarget(){
             scroller.scrollTo(target);
           }
           setInterval(() => {
             scroller.update();
           },1000);
-    </script>
-    <script>
-      const url = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSc2blsvvq1kBvCvPzGLBt4142xVDtwGthVV9Wysey-VAtx_Mg/formResponse";
-      let form = document.querySelector("#cform");
-      form.addEventListener("submit", (e)=>{
-        e.preventDefault();//prevent default behaviour
-        fetch(url,{
-            method: "POST",
-            mode: "no-cors",
-            header:{
-                'Content-Type': 'application/json'
-                },
-            body: getInputData()
-        })
-        .then(data=>{
-            alert("Message Sent");
-        })
-        .catch(err=>console.error(err)); //promise based
-      });
-      function getInputData(){
-        let dataToPost = new FormData(); //formdata API
-
-        //fill name attributes to corresponding values
-        dataToPost.append("entry.2098884524", document.querySelector("#name").value);
-        dataToPost.append("entry.779238766", document.querySelector("#email").value);
-        dataToPost.append("entry.1349167159", document.querySelector("#message").value);
-
-        return dataToPost;
-      }
     </script>
 
 </body>
