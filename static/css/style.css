@@ -217,7 +217,7 @@ a:hover{
       margin-bottom: 5px;
       color: var(--primary-white-text);
 }
-.blog-wrapper, .project-wrapper{
+.blog-wrapper, .project-wrapper, .readinglist-wrapper{
       width: 90%;
       margin: auto;
       margin-bottom: 4rem;
@@ -228,7 +228,7 @@ a:hover{
       margin: auto;
       padding-bottom: 30px; 
 }
-.blog-header, .project-header, .contact-header{
+.blog-header, .project-header, .contact-header, .readinglist-header{
       font-size: 1.5em;
       font-weight: 700;
       color: var(--numa-green-bright);
@@ -260,7 +260,7 @@ a:hover{
       text-decoration: underline;
       color: var(--primary-white);
 }
-.project-description{
+.project-description, .readinglist-description{
       font-size: 14px;
       color: var(--primary-white-text);
       margin-bottom: 30px;
@@ -270,7 +270,7 @@ a:hover{
       color: var(--primary-white-text);
       padding-bottom: 40px; 
 }
-.project-item{
+.project-item {
       width: 100%;
       display: flex;
       margin-bottom: 40px;
@@ -281,7 +281,7 @@ a:hover{
 .project-item-about{
       width: 60%;
 }
-.project-title{
+.project-title, .readinglist-title{
       font-size: 1em;
       font-weight: 700;
       color: var(--primary-white);
@@ -292,11 +292,70 @@ a:hover{
       color: var(--primary-white-text);
       hyphens: auto;
 }
+.readinglist-item{
+      width: 300px;
+      display: inline-block;
+      margin-bottom: 40px;
+}
+.readinglist-array{
+      width: 98%;
+      display: inline-block;
+      white-space: nowrap;
+      overflow-x: scroll;
+      scroll-behavior: smooth;
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+}
+
+.readinglist-array::-webkit-scrollbar{
+      display: none;
+}
+
+.readinglist-item-image{
+      width: 80%;
+      margin: auto;
+      margin-bottom: 15px;
+      display: flex;
+      justify-content: center;
+}
+.readinglist-item-about {
+      width: 90%;
+      margin: auto;
+}
+.readinglist-title {
+      width: 80%;
+      text-align: center;
+      margin: auto;
+      white-space: pre-wrap;
+      text-align: center;
+}
+.readinglist-descriptions{
+      font-size: 14px;
+      color: var(--numa-green-bright);
+      text-align: center;
+}
 .pj-img{
       width: 80%;
       object-fit: contain;
       border-radius: 10px;
 }
+.rl-img{
+      width: 80%;
+      object-fit: contain;
+      border-radius: 10px;
+}
+
+.carousel-wrapper{
+      display: flex;
+      flex-direction: row;
+}
+.paddle{
+      color: var(--numa-green-bright);
+      font-size: 48px;
+      align-self: center;
+      cursor: pointer;
+}
+
 #email{
       font-size: 12px;
       padding: 4px 6px;

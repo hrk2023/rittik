@@ -22,6 +22,13 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js" integrity="sha512-QcYm1q7RbnXmwY7HJ0H7938IS0MalTPYqGUF0fIwQgEjMBt2tqjDBt+R5I+ppdwEohjMdHnFU0H+RxmrGQ8qcg==" crossorigin="anonymous"></script>
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> 
       <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+
+      <!-- Reading List API -->
+      <script src="./static/js/readinglist.js"></script>
+
+      <!-- Reading List Paddles -->
+      <script src="./static/js/paddles.js"></script>
+
 </head>
 <body>
     <div class="scroll-container">
@@ -235,6 +242,20 @@
       </div>
       <!-- End Project Section -->
 
+      <!-- Reading List Section -->
+      <div class="readinglist-wrapper" data-scroll-section>
+        <div class="readinglist-header" data-scroll data-scroll-speed="1">Reading List</div>
+        <div class="readinglist-description" data-scroll data-scroll-speed="2">
+          Some of the books that I enjoyed reading.
+        </div>
+        <div class="carousel-wrapper">
+          <div class="paddle" id="left-paddle"><pre> < </pre></div>
+          <ul class="readinglist-array" id="readinglist" data-scroll data-scroll-speed="1"></ul>
+          <div class="paddle" id="right-paddle"><pre> > </pre></div>
+        </div>
+      </div>
+      <!-- End Reading List Section -->
+
       <!-- Contacts Section -->
       <div class="contact-wrapper" id="contact" data-scroll-section>
         <div class="contact-header" data-scroll data-scroll-speed="1">Contact</div>
@@ -274,5 +295,18 @@
           },1000);
     </script>
 
+    <script>
+      let left = document.getElementById('left-paddle');
+      let right = document.getElementById('right-paddle');
+
+      let readinglist = document.getElementById('readinglist');
+      left.addEventListener('click', () => {
+        readinglist.scrollLeft -= 800
+      })
+
+      right.addEventListener('click', () => {
+        readinglist.scrollLeft += 800
+      })
+    </script>
 </body>
 </html>
