@@ -224,8 +224,9 @@ a:hover{
 }
 .contact-wrapper{
       width: 90%;
+      margin-top: 4rem;
       margin: auto;
-      padding-bottom: 4rem; 
+      padding-bottom: 30px; 
 }
 .blog-header, .project-header, .contact-header{
       font-size: 1.5em;
@@ -310,7 +311,7 @@ a:hover{
 
 @media screen and (min-width: 1080px){
       .scroll-container{
-            width: 80%;
+            width: 90%;
             margin: auto;
       }
 }
