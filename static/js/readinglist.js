@@ -1,5 +1,5 @@
 async function readingListAPI(){
-    const readingListUrl = "https://script.google.com/macros/s/AKfycbyonsJGnLEbwLnAIT8VnDVsk8KR8snna5mXRhPUejz80HYILKhslW2nAQI3NJl2RQS3ZQ/exec?path=readinglist";
+    const readingListUrl = "https://script.google.com/macros/s/AKfycbyq_9KsZ3o2OOnqqWfA8rqw-BSFQOgi0dG1LmaZ1ddpJXCZM_pioLIXmDVgSVUd2sstWg/exec?path=readinglist";
 
     let response = await fetch(readingListUrl)
 
